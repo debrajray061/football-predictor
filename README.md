@@ -15,6 +15,7 @@ This project predicts match outcomes (Win/Draw/Loss) using historical data from 
 
 
 📁 Project Structure
+<pre>```plaintext
 laliga-predictor-1819/
 ├── data/
 │   └── laliga-1819-matches.csv
@@ -29,6 +30,7 @@ laliga-predictor-1819/
 │   └── trained_model.pkl
 ├── README.md
 └── requirements.txt
+```</pre>
 
 
 🚀 Getting Started
