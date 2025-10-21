@@ -1,17 +1,17 @@
-⚽ Football Match Predictor (Season 2018–19)
-A machine learning-based football match outcome predictor trained on data from the 2018–2019 season. This project focuses on clean data preprocessing, model training, and match result prediction using team statistics and recent form.
+⚽ Football Match Predictor — LaLiga 2018–19 Edition
+A machine learning-based football match outcome predictor trained on match data from the LaLiga 2018–2019 season. This project focuses on clean data preprocessing, model training, and match result prediction using team statistics and recent form.
 📌 Overview
-This project aims to predict the outcome of football matches (Win/Draw/Loss) using historical data from the 2018–19 season. It includes data wrangling, feature engineering, model training, and evaluation — all built with reproducibility and clarity in mind.
+This project predicts match outcomes (Win/Draw/Loss) using historical data from Spain's top-flight league — LaLiga — for the 2018–19 season. It includes data wrangling, feature engineering, model training, and evaluation, with modular code for easy extension.
 🧠 Features
-- 📅 Season-Specific Data: Trained exclusively on 2018–19 season match data
+- 🇪🇸 League-Specific Dataset: Focused on LaLiga 2018–19 matches
 - 🧹 Data Preprocessing: Handles missing values, encodes categorical features, and normalizes numerical stats
-- 🤖 Modeling: Logistic Regression (with optional support for other classifiers like Random Forest or XGBoost)
+- 🤖 Modeling: Logistic Regression (with optional support for Random Forest or XGBoost)
 - 📈 Evaluation Metrics: Accuracy, Precision, Recall, F1 Score, and Confusion Matrix
 - 🧪 Test Suite: Unit tests for core modules ensure robustness
 📁 Project Structure
-football-predictor-1819/
+laliga-predictor-1819/
 ├── data/
-│   └── season-1819-matches.csv
+│   └── laliga-1819-matches.csv
 ├── src/
 │   ├── preprocess.py
 │   ├── feature_engineering.py
@@ -27,8 +27,8 @@ football-predictor-1819/
 
 🚀 Getting Started
 - Clone the repository
-git clone https://github.com/your-username/football-predictor-1819.git
-cd football-predictor-1819
+git clone https://github.com/your-username/laliga-predictor-1819.git
+cd laliga-predictor-1819
 - Install dependencies
 pip install -r requirements.txt
 - Run the pipeline
@@ -37,12 +37,12 @@ python src/preprocess.py
 - Train model:
 python src/train_model.py
 - Predict match outcome:
-python src/predict.py --team1 "Liverpool" --team2 "Arsenal"
+python src/predict.py --team1 "Barcelona" --team2 "Valencia"
 
 
 📊 Data Source
-- Dataset: English Premier League 2018–19 season
-- Source: [Insert source here, e.g., football-data.co.uk or Kaggle]
+- Dataset: LaLiga 2018–19 season
+- Source: Given in the repository
 ✅ Testing
 Run all tests using:
 pytest tests/
@@ -50,6 +50,6 @@ pytest tests/
 
 📌 Notes
 - This project is intended for educational and experimental purposes.
-- Feel free to extend it with additional seasons, advanced models, or live data integration.
+- Extendable to other seasons or leagues with minimal changes to the pipeline.
 👤 Author
-Developed by Debraj — blending technical curiosity with a love for football analytics.
+Developed by Debraj — blending technical curiosity with football analytics and a love for clean, meaningful code.
